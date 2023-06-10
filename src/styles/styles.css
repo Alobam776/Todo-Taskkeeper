@@ -115,11 +115,6 @@ form button {
     width: 100%;
   }
   
-  .note button {
-    position: absolute;
-    right: 8px; 
-    bottom: 8px; 
-  }
 }
 
 @media (max-width: 480px) {
