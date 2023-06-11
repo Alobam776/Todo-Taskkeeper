@@ -112,6 +112,13 @@ form button {
     float: none;
   }
 
+  .note button {
+    margin-right: 5px; 
+    width: 30px; 
+    height: 30px; 
+    font-size: 14px; 
+  }
+
   form {
     width: 100%;
   }
