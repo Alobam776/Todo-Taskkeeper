@@ -114,14 +114,14 @@ form button {
 
   .note {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    text-align: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
   }
 
-  .note button {
-    margin-left: auto;
+  .note p {
+    margin-right: auto;
   }
   /* .note button {
     margin-right: 5px; 
