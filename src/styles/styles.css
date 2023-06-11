@@ -126,7 +126,8 @@ form button {
   }
 
   .note p {
-    margin-right: auto;
+    /* margin-right: auto; */
+    display: block;
   }
   /* .note button {
     margin-right: 5px; 
