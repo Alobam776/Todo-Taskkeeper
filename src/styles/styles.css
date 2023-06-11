@@ -112,12 +112,17 @@ form button {
     float: none;
   } */
 
-  .note {
+  /* .note {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     text-align: left;
+  } */
+  .note {
+    /* Adjustments for responsiveness */
+    width: 100%;
+    margin: 16px 0;
   }
 
   .note p {
