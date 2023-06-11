@@ -41,7 +41,7 @@ function TaskForm(props) {
           name="content"
           onChange={handleChange}
           value={note.content}
-          placeholder="Take a note..."
+          placeholder="Write your task..."
           rows="3"
         />
         <button onClick={submitNote}>
