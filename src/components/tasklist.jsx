@@ -4,27 +4,27 @@ import { MdUndo } from "react-icons/md";
 import { GiCheckMark } from "react-icons/gi";
 
 function TaskList(props) {
-  const [disabled, setDisabled] = useState(false);
+  const [completed, setCompleted] = useState(props.completed);
 
   function handleClick() {
     props.onDelete(props.id);
   }
 
   const handleToggle = () => {
-    setDisabled(!disabled);
+    setCompleted(!completed);
     props.onToggle();
   };
 
   return (
-    <div className={`note ${disabled ? "disabled" : ""}`}>
-      <h1 style={{ textDecoration: props.completed ? "line-through" : "none" }}>
+    <div className={`note ${completed ? "completed" : ""}`}>
+      <h1 style={{ textDecoration: completed ? "line-through" : "none" }}>
         {props.title}
       </h1>
-      <p style={{ textDecoration: props.completed ? "line-through" : "none" }}>
+      <p style={{ textDecoration: completed ? "line-through" : "none" }}>
         {props.content}
       </p>
       <button onClick={handleToggle}>
-        {props.completed ? <MdUndo /> : <GiCheckMark />}
+        {completed ? <MdUndo /> : <GiCheckMark />}
       </button>
       <button onClick={handleClick}>
         <MdDelete />
