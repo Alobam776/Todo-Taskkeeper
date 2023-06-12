@@ -12,7 +12,6 @@ function TaskList(props) {
 
   const handleToggle = () => {
     setCompleted(!completed);
-    props.onToggle();
   };
 
   return (
@@ -20,7 +19,12 @@ function TaskList(props) {
       <h1 style={{ textDecoration: completed ? "line-through" : "none" }}>
         {props.title}
       </h1>
-      <p style={{ textDecoration: completed ? "line-through" : "none" }}>
+      <p
+        style={{
+          textDecoration: completed ? "line-through" : "none",
+          pointerEvents: completed ? "none" : "auto",
+        }}
+      >
         {props.content}
       </p>
       <button onClick={handleToggle}>
